@@ -1,3 +1,5 @@
-<ul>
-    <li *ngFor="let menuItem of menuItems">{{menuItem.label}}</li>
+<ul id="menu">
+    <li *ngFor="let menuItem of menuItems" [ngClass]="{menuItem: true, active:itemSelected===menuItem.index}">
+        <button (click)="selectMenuItem(menuItem.index)">{{menuItem.label}}</button>
+    </li>
 </ul>

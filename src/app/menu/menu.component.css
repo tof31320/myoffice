@@ -1,0 +1,19 @@
+ul#menu {
+    position: absolute;
+    left: 150px;
+    top: 0px;
+}
+
+li.menuItem {
+    display: inline;
+}
+
+li.menuItem button {
+    width: 60px;
+    height: 50px;
+}
+
+ul#menu li.active button {
+    background-color: blue;
+    color: white;
+}
