@@ -4,7 +4,15 @@
     <div id="currentDate">{{currentDate}}</div>
 </div>
 <br/>
-<app-dialog></app-dialog>
+
+<!-- Dialogs -->
+<app-dialog [id]="'Item01Dialog'" [gameModel]="gameModel" [title]="'HelloDialog1'"></app-dialog>
+<app-dialog [id]="'Item02Dialog'" [gameModel]="gameModel" [title]="'HelloDialog2'"></app-dialog>
+<app-dialog [id]="'Item03Dialog'" [gameModel]="gameModel" [title]="'HelloDialog3'"></app-dialog>
+<app-dialog [id]="'Item04Dialog'" [gameModel]="gameModel" [title]="'HelloDialog4'"></app-dialog>
+
+<scene></scene>
+
 <div id="footer">
     <button id="endTurnButton" (click)="endTurn()">End!</button>
 </div>

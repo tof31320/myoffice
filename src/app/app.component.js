@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var AppConfiguration_1 = require("./model/AppConfiguration");
 var Player_1 = require("./model/Player");
+var game_1 = require("./model/game");
 var AppComponent = (function () {
     function AppComponent() {
         this.currentTurn = 1;
@@ -21,10 +22,11 @@ var AppComponent = (function () {
         this.currentDateTime = this.config.startDate.getTime();
         this.player = this.createPlayer();
         this.updateCurrentDate();
+        this.gameModel = new game_1.GameModel();
     }
     AppComponent.prototype.createPlayer = function () {
         var player = new Player_1.Player('ToF');
-        player.avatar = this.config.avatarsUrl + '/A01' + '.png';
+        player.avatar = this.config.avatarsUrl + '/A02' + '.png';
         return player;
     };
     AppComponent.prototype.updateCurrentDate = function () {
@@ -36,6 +38,8 @@ var AppComponent = (function () {
         this.currentTurn++;
         this.currentDateTime += this.config.timeByTurn;
         this.updateCurrentDate();
+    };
+    AppComponent.prototype.openDialog = function (dialogId) {
     };
     return AppComponent;
 }());

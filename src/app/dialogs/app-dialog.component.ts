@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { GameModel } from '../model/game';
 
 @Component({
     selector: 'app-dialog',
@@ -6,10 +7,19 @@ import { Component } from '@angular/core';
     styleUrls: [ './app-dialog.component.css' ]
 })
 export class AppDialogComponent {
-    title: string = 'DialogTitle';
+
+    @Input() id: string = '0';
+
+    @Input() gameModel: GameModel;
+
+    @Input() title: string = 'DialogTitle';
     body: string = 'BODY';
     width: string = '600px';
     height: string = '300px';
     top: number = 30;
     left: number = 10;
+    show: boolean = false;
+
+    constructor(){    
+    }
 }

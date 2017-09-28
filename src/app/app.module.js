@@ -11,6 +11,7 @@ var app_component_1 = require("./app.component");
 var player_component_1 = require("./player/player.component");
 var menu_component_1 = require("./menu/menu.component");
 var app_dialog_component_1 = require("./dialogs/app-dialog.component");
+var scene_component_1 = require("./scene/scene.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -19,7 +20,7 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule],
-        declarations: [app_component_1.AppComponent, player_component_1.PlayerComponent, menu_component_1.MenuComponent, app_dialog_component_1.AppDialogComponent],
+        declarations: [app_component_1.AppComponent, player_component_1.PlayerComponent, menu_component_1.MenuComponent, app_dialog_component_1.AppDialogComponent, scene_component_1.SceneComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);

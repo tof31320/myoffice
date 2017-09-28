@@ -1,0 +1,5 @@
+div#mainScene {
+    width: 100%;
+    height: 500px;
+    border: solid 1px gray;
+}

@@ -1,7 +1,12 @@
 div.app-dialog {
     background-color: azure;
     border: solid 1px black;
+    display: none;
     position: absolute;
+}
+
+div.app-dialog .dialog-open {
+    display: block;
 }
 
 div.app-dialog-header {
