@@ -1,0 +1,28 @@
+div.app-dialog {
+    background-color: azure;
+    border: solid 1px black;
+    position: absolute;
+}
+
+div.app-dialog-header {
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: beige;
+}
+
+div.app-dialog-header div.app-dialog-title {
+    font-weight: bold;
+    float: left;
+}
+
+div.app-dialog-header div.app-dialog-close {
+    float: right;
+    padding-right: 5px;
+}
+
+div.app-dialog-body {
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
